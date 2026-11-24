@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Netflix",
+        "price": 45.0,
+        "cycle": "monthly",
+        "renewal_date": "2026-11-28"
+    },
+    {
+        "name": "Icloud",
+        "price": 120.0,
+        "cycle": "yearly",
+        "renewal_date": "2027-05-01"
+    },
+    {
+        "name": "3",
+        "price": 10.0,
+        "cycle": "monthly",
+        "renewal_date": "2026-11-29"
+    }
+]

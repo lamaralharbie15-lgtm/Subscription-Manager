@@ -15,7 +15,7 @@ def main():
             new_sub = ui.get_new_subscription()
             subscriptions.append(new_sub)
             storage.save_subscriptions(subscriptions)
-            ui.show_message("✅ تم حفظ الاشتراك بنجاح!")
+            ui.show_message("✅ Subscription saved successfully!")
             
         elif choice == "2":
             # عرض جميع الاشتراكات الحالية
@@ -37,14 +37,14 @@ def main():
             if index is not None and 0 <= index < len(subscriptions):
                 removed = subscriptions.pop(index)
                 storage.save_subscriptions(subscriptions)
-                ui.show_message(f"🗑️ تم حذف اشتراك: {removed['name']}")
+                ui.show_message(f"🗑️ Deleted subscription: {removed['name']}")
                 
         elif choice == "0":
             # الخروج من البرنامج
-            ui.show_message("👋 شكراً لاستخدامك مدير الاشتراكات!")
+            ui.show_message("👋 Thank you for using Subscription Manager!")
             break
         else:
-            ui.show_message("⚠️ خيار غير صحيح، حاول مرة أخرى.")
+            ui.show_message("⚠️ Invalid option, please try again.")
 
 if __name__ == "__main__":
     main()
